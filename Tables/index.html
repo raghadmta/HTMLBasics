@@ -3,21 +3,13 @@
 
 <head>
     <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td,
-        th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            text-align: center;
         }
     </style>
     <title>Ship To It - Company Packing List</title>
@@ -25,16 +17,55 @@
 
 <body>
     <table>
-        <tr>
-            <th scope="col">Company Name</th>
-            <th scope="col">Number of Items to Ship</th>
-            <th scope="col">Next Action</th>
-        </tr>
-        <tr>
-            <td>Adam’s Greenworks</td>
-            <td>14</td>
-            <td>Package Items</td>
-        </tr>
+        <!-- Table Head  -->
+        <thead>
+            <tr>
+                <th scope="col">Company Name</th>
+                <th scope="col">Number of Items to Ship</th>
+                <th scope="col">Next Action</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Adam’s Greenworks</td>
+                <td>14</td>
+                <td>Package Items</td>
+            </tr>
+            <tr>
+                <td>Davie's Burgers</td>
+                <td>2</td>
+                <td>Send Invoice</td>
+            </tr>
+            <tr>
+                <td>Baker's Bike Shop</td>
+                <td>3</td>
+                <!-- rowspan="x" is to span a value cross the table -->
+                <td rowspan="2">Send Invoice</td>
+            </tr>
+            <tr>
+                <td>Miss Sally's Southern</td>
+                <td>4</td>
+                <td>Ship</td>
+            </tr>
+            <tr>
+                <td>Summit Resort Rentals</td>
+                <td>4</td>
+                <td>Ship</td>
+            </tr>
+            <tr>
+                <td>Strike Fitness</td>
+                <!-- colspan="x" is to span a value cross the table -->
+                <td colspan="2">1</td>
+                <td>Enter Order</td>
+            </tr>
+        </tbody>
+    </table>
+    <tfoot>
+        <td>Total</td>
+        <td>28</td>
+    </tfoot>
     </table>
 </body>
 
