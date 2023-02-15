@@ -1,0 +1,1 @@
+![Alt text](https://content.codecademy.com/courses/updated_images/SemanticVSNonSemantic_Diagram_Updated_1.svg)
